@@ -4,40 +4,45 @@ import requests
 import wget
 import time
 
+saveDir = 'image'
+
 heroListUrl = 'https://game.gtimg.cn/images/lol/act/img/js/heroList/hero_list.js'
 resp = requests.get(heroListUrl)
 resp.encoding = 'utf-8'
 resp = resp.text
+heroList = json.loads(resp)
 
-List = json.loads(resp)
+heroes = heroList['hero']
 
-saveDir = 'image'
-
-heroes = List['hero']
 for hero in heroes:
     heroId = hero['heroId']
     heroName = hero['name']
 
-    url = 'https://game.gtimg.cn/images/lol/act/img/js/hero/{}.js'
-    url = url.format(heroId)
-
-    resp = requests.get(url) 
-    resp.encoding()
-    resp = resp.text
-
     savePath = os.path.join(saveDir, heroName)
+    
     if not os.path.exists(savePath):
         os.makedirs(savePath)
 
+    url = 'https://game.gtimg.cn/images/lol/act/img/js/hero/{}.js'
+    url = url.format(heroId)
+    
+
+    resp = requests.get(url) 
+    resp.encoding = 'utf-8'
+    resp = resp.text
     hero = json.loads(resp)
+
     skins = hero['skins']
+
     for skin in skins:
-        mainImg = skin['mainImg']
+        imgUrl = skin['mainImg']
         skinName = skin['name'].replace("/", " ")
-        if mainImg == " " or skinName == " ":
+        if imgUrl == '' or skinName == '':
             continue
-        #print(imgName)
+        
         saveName = f'{skinName}.jpg'
-        if not os.path.exists(os.path.join(saveDir, saveName)):
-            wget.download(mainImg, os.path.join(saveDir, f'{skinName}.jpg'))
+        print(imgUrl)
+        
+        if not os.path.exists(os.path.join(savePath, saveName)):
+            wget.download(imgUrl, os.path.join(savePath, saveName))
         time.sleep(0.1)
