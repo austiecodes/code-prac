@@ -22,6 +22,7 @@ for hero in heroes:
     url = url.format(heroId)
 
     resp = requests.get(url) 
+    resp.encoding()
     resp = resp.text
 
     savePath = os.path.join(saveDir, heroName)
@@ -32,12 +33,11 @@ for hero in heroes:
     skins = hero['skins']
     for skin in skins:
         mainImg = skin['mainImg']
-        imgName = skin['name']
-        file =  os.path("image/{}.jpg")
-        file = file.format(imgName)
+        skinName = skin['name'].replace("/", " ")
+        if mainImg == " " or skinName == " ":
+            continue
         #print(imgName)
-        if not file.exists():
-            if mainImg == " ":
-                continue
-            wget.download(mainImg, savePath)
+        saveName = f'{skinName}.jpg'
+        if not os.path.exists(os.path.join(saveDir, saveName)):
+            wget.download(mainImg, os.path.join(saveDir, f'{skinName}.jpg'))
         time.sleep(0.1)
