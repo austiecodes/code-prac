@@ -12,9 +12,9 @@ func main() {
 	http.HandleFunc("/", root)
 	http.HandleFunc("/short", short)
 	http.HandleFunc("/long", long)
-
 	log.Fatal(http.ListenAndServe("localhost:8080", nil))
 }
+
 
 // the template used to show the forms and the results' web page to the user
 var rootHtmlTmpl = template.Must(template.New("rootHtml").Parse(`
@@ -38,7 +38,9 @@ func root(w http.ResponseWriter, r *http.Request) {
 }
 func short(w http.ResponseWriter, r *http.Request) {
 	longUrl := r.FormValue("longUrl")
-	urlshortenerSvc, _ := urlshortener.New(http.DefaultClient)
+	//urlshortenerSvc, _ := urlshortener.New(http.DefaultClient)
+	urlshortenerSvc, _ := urlshortener.NewService(http.DefaultClient)
+
 	url, _ := urlshortenerSvc.Url.Insert(&urlshortener.Url{LongUrl: longUrl}).Do()
 	rootHtmlTmpl.Execute(w, fmt.Sprintf("Shortened version of %s is : %s",
 		longUrl, url.Id))
