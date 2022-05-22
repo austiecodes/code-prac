@@ -1,0 +1,69 @@
+return {
+  ["workshop-1265737101"]={ ["configuration_options"]={  }, ["enabled"]=true },
+  ["workshop-1418746242"]={
+    ["configuration_options"]={ ["clearfont"]=true, ["eventplus"]=true, ["extratrans"]=true },
+    ["enabled"]=true 
+  },
+  ["workshop-1699194522"]={ ["configuration_options"]={  }, ["enabled"]=true },
+  ["workshop-1991746508"]={
+    ["configuration_options"]={ ["Language"]="A", ["ShowBuff"]=true },
+    ["enabled"]=true 
+  },
+  ["workshop-2420839895"]={
+    ["configuration_options"]={
+      ["ROPE_BRIDGE_BOARDS_RATIO"]=0.375,
+      ["ROPE_BRIDGE_DISTANCE"]=16,
+      ["ROPE_BRIDGE_ROPE_RATIO"]=0.375 
+    },
+    ["enabled"]=true 
+  },
+  ["workshop-2589712698"]={
+    ["configuration_options"]={
+      ["amulet_slot"]=true,
+      ["backpack_slot"]=true,
+      ["chesspiece_fix"]=true,
+      ["compass_slot"]=true,
+      ["drop_hand_item_when_heavy"]=true,
+      ["enable_ui"]=0,
+      ["render_strategy"]="neck",
+      ["show_compass"]=false,
+      ["slots_num"]=0,
+      ["snurtle_remove_armor"]=true 
+    },
+    ["enabled"]=true 
+  },
+  ["workshop-362175979"]={ ["configuration_options"]={ ["Draw over FoW"]="disabled" }, ["enabled"]=true },
+  ["workshop-375859599"]={
+    ["configuration_options"]={
+      ["divider"]=5,
+      ["random_health_value"]=0,
+      ["random_range"]=0,
+      ["send_unknwon_prefabs"]=false,
+      ["show_type"]=0,
+      ["unknwon_prefabs"]=1,
+      ["use_blacklist"]=true 
+    },
+    ["enabled"]=true 
+  },
+  ["workshop-378160973"]={
+    ["configuration_options"]={
+      ["ENABLEPINGS"]=true,
+      ["FIREOPTIONS"]=2,
+      ["OVERRIDEMODE"]=false,
+      ["SHAREMINIMAPPROGRESS"]=true,
+      ["SHOWFIREICONS"]=true,
+      ["SHOWPLAYERICONS"]=true,
+      ["SHOWPLAYERSOPTIONS"]=2 
+    },
+    ["enabled"]=true 
+  },
+  ["workshop-501385076"]={
+    ["configuration_options"]={
+      ["quick_cook_on_fire"]=true,
+      ["quick_harvest"]=true,
+      ["quick_pick_cactus"]=true,
+      ["quick_pick_plant_normal_ground"]=true 
+    },
+    ["enabled"]=true 
+  } 
+}

@@ -1,0 +1,52 @@
+--There are two functions that will install mods, ServerModSetup and ServerModCollectionSetup. Put the calls to the functions in this file and they will be executed on boot.
+
+--ServerModSetup takes a string of a specific mod's Workshop id. It will download and install the mod to your mod directory on boot.
+	--The Workshop id can be found at the end of the url to the mod's Workshop page.
+	--Example: http://steamcommunity.com/sharedfiles/filedetails/?id=350811795
+	--ServerModSetup("350811795")
+
+--ServerModCollectionSetup takes a string of a specific mod's Workshop id. It will download all the mods in the collection and install them to the mod directory on boot.
+	--The Workshop id can be found at the end of the url to the collection's Workshop page.
+	--Example: http://steamcommunity.com/sharedfiles/filedetails/?id=379114180
+	--ServerModCollectionSetup("379114180")
+	ServerModSetup("1699194522")
+	ServerModSetup("1991746508")
+	ServerModSetup("2420839895")
+	ServerModSetup("2724419397")
+	ServerModSetup("375859599")
+	ServerModSetup("378160973")
+	ServerModSetup("501385076")
+ 	ServerModSetup("1418746242")
+ 	ServerModSetup("1378549454")
+ 	ServerModSetup("2066892053")
+ 	ServerModSetup("2169557849")
+ 	ServerModSetup("2506863549")
+ 	ServerModSetup("2513010447")
+ 	ServerModSetup("2589712698")
+ 	ServerModSetup("2732158206")
+ 	ServerModSetup("758532836")
+	ServerModSetup("362175979")
+	ServerModSetup("1751811434")
+	ServerModSetup("1216718131")
+	ServerModSetup("1467214795")
+	ServerModSetup("1595631294")
+	ServerModSetup("362175979")
+	ServerModSetup("697356989")
+	ServerModSetup("758532836")
+	ServerModSetup("1182889606")
+	ServerModSetup("1392778117")
+	ServerModSetup("1751811434")
+	ServerModSetup("2589712698")
+	ServerModSetup("2689862483")
+	ServerModSetup("2754469576")
+	ServerModSetup("378160973")
+	ServerModSetup("2791585903")
+	ServerModSetup("1909182187")
+	ServerModSetup("2334209327")
+	ServerModSetup("2505341606")
+	ServerModSetup("2066838067")
+	ServerModSetup("2754978978")
+	ServerModSetup("2772961628")
+	ServerModSetup("2774370370")
+	ServerModSetup("2779266161")
+	ServerModSetup("1265737101")
