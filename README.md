@@ -2,22 +2,14 @@
 
 A reposity for code practice.
 
-## Vue
+## dst-add-mode
+A simple python script for add extra mode-num in dst server config file
 
-1. vuetodo
+## py-decorator
+Demo code for learning about python decorator
 
-   a web todo app created by Vue3
+## py-spyder
+A python spyder for crawing lol pics
 
-## Python
-
-1. Py-spider
-   for LOL wallpaper
-
-2. Py-decorator
-
-   demo code for python decorator
-
-
-## Golang
-
-go-practice
+## vuetodo
+A todo web demo created by vue

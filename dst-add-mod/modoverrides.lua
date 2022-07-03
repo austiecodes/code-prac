@@ -1,69 +1,88 @@
 return {
-  ["workshop-1265737101"]={ ["configuration_options"]={  }, ["enabled"]=true },
-  ["workshop-1418746242"]={
-    ["configuration_options"]={ ["clearfont"]=true, ["eventplus"]=true, ["extratrans"]=true },
-    ["enabled"]=true 
+  ["workshop-1207269058"]={ configuration_options={  }, enabled=true },
+  ["workshop-1216718131"]={ configuration_options={ clean=true, lang=true, stack=true }, enabled=true },
+  ["workshop-1392778117"]={
+    configuration_options={
+      BackCubChance=0.7,
+      BetterCookBook=true,
+      BookRecipetabs="bookbuilder",
+      CleaningUpStench=false,
+      DesertSecret=true,
+      DressUp=true,
+      FestivalRecipes=false,
+      FlashAndCrush=true,
+      FlowerWeaponsChance=0.03,
+      FlowersPower=true,
+      FoliageathChance=0.005,
+      Language="chinese",
+      LegendOfFall=true,
+      PrayForRain=true,
+      SuperbCuisine=true,
+      TechUnlock="prototyper",
+      Title="" 
+    },
+    enabled=true 
   },
-  ["workshop-1699194522"]={ ["configuration_options"]={  }, ["enabled"]=true },
-  ["workshop-1991746508"]={
-    ["configuration_options"]={ ["Language"]="A", ["ShowBuff"]=true },
-    ["enabled"]=true 
+  ["workshop-1595631294"]={
+    configuration_options={
+      BundleItems=false,
+      ChangeSkin=true,
+      Digornot=false,
+      DragonflyChest=false,
+      Icebox=false,
+      SaltBox=false 
+    },
+    enabled=true 
   },
+  ["workshop-1991746508"]={ configuration_options={ Language="A", ShowBuff=true }, enabled=true },
   ["workshop-2420839895"]={
-    ["configuration_options"]={
-      ["ROPE_BRIDGE_BOARDS_RATIO"]=0.375,
-      ["ROPE_BRIDGE_DISTANCE"]=16,
-      ["ROPE_BRIDGE_ROPE_RATIO"]=0.375 
+    configuration_options={
+      ROPE_BRIDGE_BOARDS_RATIO=0.375,
+      ROPE_BRIDGE_DISTANCE=16,
+      ROPE_BRIDGE_ROPE_RATIO=0.375 
     },
-    ["enabled"]=true 
+    enabled=true 
   },
-  ["workshop-2589712698"]={
-    ["configuration_options"]={
-      ["amulet_slot"]=true,
-      ["backpack_slot"]=true,
-      ["chesspiece_fix"]=true,
-      ["compass_slot"]=true,
-      ["drop_hand_item_when_heavy"]=true,
-      ["enable_ui"]=0,
-      ["render_strategy"]="neck",
-      ["show_compass"]=false,
-      ["slots_num"]=0,
-      ["snurtle_remove_armor"]=true 
-    },
-    ["enabled"]=true 
-  },
-  ["workshop-362175979"]={ ["configuration_options"]={ ["Draw over FoW"]="disabled" }, ["enabled"]=true },
+  ["workshop-375850593"]={ configuration_options={  }, enabled=true },
   ["workshop-375859599"]={
-    ["configuration_options"]={
-      ["divider"]=5,
-      ["random_health_value"]=0,
-      ["random_range"]=0,
-      ["send_unknwon_prefabs"]=false,
-      ["show_type"]=0,
-      ["unknwon_prefabs"]=1,
-      ["use_blacklist"]=true 
+    configuration_options={
+      divider=5,
+      random_health_value=0,
+      random_range=0,
+      send_unknwon_prefabs=false,
+      show_type=0,
+      unknwon_prefabs=1,
+      use_blacklist=true 
     },
-    ["enabled"]=true 
+    enabled=true 
   },
   ["workshop-378160973"]={
-    ["configuration_options"]={
-      ["ENABLEPINGS"]=true,
-      ["FIREOPTIONS"]=2,
-      ["OVERRIDEMODE"]=false,
-      ["SHAREMINIMAPPROGRESS"]=true,
-      ["SHOWFIREICONS"]=true,
-      ["SHOWPLAYERICONS"]=true,
-      ["SHOWPLAYERSOPTIONS"]=2 
+    configuration_options={
+      ENABLEPINGS=true,
+      FIREOPTIONS=2,
+      OVERRIDEMODE=false,
+      SHAREMINIMAPPROGRESS=true,
+      SHOWFIREICONS=true,
+      SHOWPLAYERICONS=true,
+      SHOWPLAYERSOPTIONS=2 
     },
-    ["enabled"]=true 
+    enabled=true 
   },
-  ["workshop-501385076"]={
-    ["configuration_options"]={
-      ["quick_cook_on_fire"]=true,
-      ["quick_harvest"]=true,
-      ["quick_pick_cactus"]=true,
-      ["quick_pick_plant_normal_ground"]=true 
+  ["workshop-458587300"]={ configuration_options={ Ownership=false, Travel_Cost=32 }, enabled=true },
+  ["workshop-666155465"]={
+    configuration_options={
+      chestB=-1,
+      chestG=-1,
+      chestR=-1,
+      display_hp=-1,
+      food_estimation=-1,
+      food_order=0,
+      food_style=0,
+      lang="chs",
+      show_food_units=-1,
+      show_uses=-1 
     },
-    ["enabled"]=true 
-  } 
+    enabled=true 
+  },
+  ["workshop-785009843"]={ configuration_options={  }, enabled=true } 
 }
